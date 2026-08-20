@@ -1,0 +1,44 @@
+PSEUDOCODE:
+
+START
+
+Read assignment statements
+
+FOR each expression DO
+
+    IF both operands are constants THEN
+        Evaluate the expression
+        Replace expression with computed value
+        Apply Constant Folding
+    END IF
+
+    IF expression matches x + 0 OR 0 + x THEN
+        Replace with x
+        Apply Algebraic Simplification
+    END IF
+
+    IF expression matches x - 0 THEN
+        Replace with x
+        Apply Algebraic Simplification
+    END IF
+
+    IF expression matches x * 1 THEN
+        Replace with x
+        Apply Algebraic Simplification
+    END IF
+
+    IF expression matches x / 1 THEN
+        Replace with x
+        Apply Algebraic Simplification
+    END IF
+
+    IF expression matches x * 2 THEN
+        Replace with x + x
+        Apply Strength Reduction
+    END IF
+
+    Print optimized expression
+
+END FOR
+
+STOP
