@@ -1,0 +1,9 @@
+OUTPUT:
+
+Enter the expression: a=b+c*d
+t1 = c * d
+t2 = b + t1
+a = t2
+
+RESULT:
+Thus, the program to generate three-address code using FLEX and BISON was executed and verified successfully.
