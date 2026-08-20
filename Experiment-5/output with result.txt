@@ -1,0 +1,7 @@
+OUTPUT:
+Enter a C control structure syntax:switch(x){case 1:{} default:{}}
+Valid control structure syntax.
+
+RESULT:
+Thus the program to recognize a valid control structure syntax of C language (For loop, while loop, if-else, if-else-
+if, switch-case, etc.) using FLEX and BISON was executed and verified successfully.
