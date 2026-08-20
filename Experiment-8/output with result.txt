@@ -1,0 +1,12 @@
+OUTPUT:
+
+Enter declarations and expressions:int a;
+int b;
+int c;
+a=b*c;
+No type mismatch in expression: a = ...
+
+RESULT:
+
+Thus, the FLEX and BISON program for type checking was successfully implemented. The program builds a 
+symbol table from declarations and checks type consistency in assignment expressions.

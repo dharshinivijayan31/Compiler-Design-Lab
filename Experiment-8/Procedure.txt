@@ -1,0 +1,33 @@
+PROCEDURE:
+
+1. Create a FLEX file (typecheck.l) to identify tokens such as keywords (int, float), identifiers, numbers, operators, and delimiters.
+
+2. Create a BISON file (typecheck.y) to define grammar rules for declarations, assignments, and arithmetic expressions.
+
+3. Implement a symbol table to store variable names and their corresponding data types.
+
+4. Insert variables into the symbol table whenever a declaration statement is encountered.
+
+5. During assignment and expression evaluation, retrieve variable types from the symbol table.
+
+6. Check whether variables are declared before use.
+
+7. Compare the types of operands and assignment targets to detect type mismatches.
+
+8. Generate appropriate messages for valid expressions, type mismatches, and undefined variables.
+
+9. Compile the FLEX file using:
+   flex typecheck.l
+
+10. Compile the BISON file using:
+    bison -d typecheck.y
+
+11. Generate the executable using:
+    gcc lex.yy.c typecheck.tab.c -o typecheck -lfl
+
+12. Execute the program:
+    ./typecheck
+
+13. Provide declarations and assignment expressions as input and observe the type-checking results.
+
+14. Stop the program after verifying the output.

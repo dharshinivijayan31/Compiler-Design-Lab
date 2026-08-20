@@ -1,0 +1,30 @@
+PSEUDOCODE:
+
+START
+
+Create an empty symbol table
+
+Read declarations and expressions
+
+FOR each declaration statement DO
+    Extract variable name and type
+    Insert variable and type into symbol table
+END FOR
+
+FOR each assignment statement DO
+    Check whether the variable is present in symbol table
+
+    IF variable is not declared THEN
+        Print "Undefined Variable"
+    ELSE
+        Determine the type of the expression
+
+        IF expression type matches variable type THEN
+            Print "No Type Mismatch"
+        ELSE
+            Print "Type Mismatch"
+        END IF
+    END IF
+END FOR
+
+STOP

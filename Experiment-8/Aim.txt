@@ -1,0 +1,3 @@
+AIM:
+
+To write a program using FLEX and BISON to implement type checking of variables in simple declarations and expressions using a symbol table. The program verifies whether variables are declared before use and checks for type mismatches in assignments and arithmetic expressions.
