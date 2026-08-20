@@ -1,0 +1,45 @@
+PSEUDOCODE:
+
+START
+
+Read Three Address Code statement
+
+FOR each assignment statement DO
+
+    Read left-hand side variable
+
+    Read expression
+
+    Load first operand into AX register
+    Generate:
+        MOV AX, operand
+
+    IF operator is '+' THEN
+        Generate:
+            ADD AX, operand
+    END IF
+
+    IF operator is '-' THEN
+        Generate:
+            SUB AX, operand
+    END IF
+
+    IF operator is '*' THEN
+        Generate:
+            MUL operand
+    END IF
+
+    IF operator is '/' THEN
+        Generate:
+            MOV DX, 0
+            MOV BX, operand
+            DIV BX
+    END IF
+
+    Store result into destination variable
+    Generate:
+        MOV destination, AX
+
+END FOR
+
+STOP

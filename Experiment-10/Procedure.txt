@@ -1,0 +1,45 @@
+PROCEDURE:
+
+1. Create a FLEX file (backend.l) to recognize identifiers, operators, and delimiters from Three Address Code statements.
+
+2. Create a BISON file (backend.y) to define grammar rules for assignment statements and arithmetic expressions.
+
+3. Define semantic actions in BISON to generate corresponding 8086 assembly instructions.
+
+4. For the first operand of an expression, generate:
+   MOV AX, operand
+
+5. For addition operations, generate:
+   ADD AX, operand
+
+6. For subtraction operations, generate:
+   SUB AX, operand
+
+7. For multiplication operations, generate:
+   MUL operand
+
+8. For division operations, generate:
+   MOV DX, 0
+   MOV BX, operand
+   DIV BX
+
+9. After evaluating the expression, store the result using:
+   MOV result, AX
+
+10. Compile the FLEX file:
+    flex backend.l
+
+11. Compile the BISON file:
+    bison -d backend.y
+
+12. Generate the executable:
+    gcc lex.yy.c backend.tab.c -o backend -lfl
+
+13. Execute the program:
+    ./backend
+
+14. Enter Three Address Code statements and observe the generated 8086 assembly instructions.
+
+15. Verify the correctness of the generated assembly code.
+
+16. Terminate the program.
