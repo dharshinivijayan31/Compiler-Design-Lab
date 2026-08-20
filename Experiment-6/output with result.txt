@@ -1,0 +1,6 @@
+OUTPUT:
+Enter the expression:3/3
+Answer: 1
+
+RESULT:
+Thus the program for implementing a calculator using FLEX and BISON was executed and verified successfully.
