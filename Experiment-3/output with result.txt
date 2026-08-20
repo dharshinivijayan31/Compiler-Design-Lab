@@ -1,0 +1,11 @@
+OUTPUT
+
+Enter the Expression:a=b
+Invalid Expression
+
+
+RESULT:
+
+
+Thus the program to recognize a valid arithmetic expression that uses operator +, - , * and / using FLEX and
+BISON was executed and verified successfully.
