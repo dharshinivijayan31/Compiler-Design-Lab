@@ -1,0 +1,23 @@
+OUTPUT :
+
+Identifier : int
+Identifier : a
+Operator : =
+Constant : 10
+Comment : // sum variable
+Identifier : b
+Operator : =
+Identifier : a
+Operator : +
+Constant : 5
+
+SYMBOL TABLE
+S.No	Name
+1	int
+2	a
+3	b
+
+RESULT:
+RESULT:
+Thus the FLEX program to develop a lexical analyzer recognizing identifiers, constants, comments and operators,
+and to build a symbol table, was executed and verified successfully.
